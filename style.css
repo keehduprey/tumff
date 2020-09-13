@@ -1,0 +1,181 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body{
+	background: #FFF3E0;
+	background-position-y: 30px;
+	background-position-x: 100px;
+	font-family:  Helvetica, sans-serif;
+	font-weight: 100;
+
+}
+
+#container{
+
+	width: 95vw;
+	margin: 20px ;
+	position: absolute;
+	justify-content: center;
+}
+
+#logo{
+	position: relative;
+	top: 23px;
+	font-size: 48px;
+	color: #2B2933;
+
+}
+
+nav {
+	float: right;
+	position: relative;
+	right: -34px;
+	top: -30px;
+
+
+
+}
+
+nav li{
+	float: left;
+	background-color: #222933;
+	list-style: none;
+	text-align: center;
+	line-height: 50px;
+	margin: 0 34px;
+	border-radius: 5px;
+	
+}
+
+nav li a{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	width: 160px;
+	height: 50px;
+	display: inline-block;
+
+}
+
+nav li:hover{
+	background: transparent; 
+	border: 1px solid #222933;
+	color: #222933;
+	border-radius: 5px;
+}
+
+ nav li a:hover{
+ 	color: #222933; 
+ }
+
+
+#coluna1, #coluna2{
+
+	width: 500px;
+	float: right;
+	margin-right: 52px;
+	background-color: rgba(201,199,208,0.5);
+	margin-bottom: 10px;
+	box-sizing: content-box;
+
+}
+
+#coluna1{
+	grid-area: coluna;
+
+}
+
+#coluna2{
+	grid-area: coluna2;
+
+
+}
+
+.post{
+	background: white;
+	width: 480px;
+	margin: 10px auto;
+	padding: 15px;
+	border: 1px solid black;
+
+
+}
+
+.post img{
+	width: 450px;
+	height: 250px;
+	margin-bottom: 5px;
+}
+
+.post .texto{
+	text-align: center;
+	font-size: 18px;
+	color: #2B2933;
+}
+
+.post .quote{
+	font-size: 24px;
+	text-align: justify-all;
+}
+
+.clear{
+	clear: both;
+}
+
+@media (max-width: 820px){
+	body{
+		background: #FFF3E0;
+	}
+	#container{
+		position: relative;
+	}	
+
+	#logo{		
+		width: 100%;
+	}
+	nav{
+		top: 50px;
+		left: 0px;
+		margin-bottom: 70px;
+		width: 100%;
+	}
+
+	nav li {
+		float: none;
+		margin-bottom: 5px;
+	}
+
+	nav li a{
+	
+		width: 100%;
+
+	}
+	#coluna1{
+		top: 200px;
+		margin:0 auto;
+		float: none;
+		padding: 10px 0;
+		width: 95%;
+
+	}
+
+	#coluna2{
+		float: none;
+		margin: -10px auto;
+		width: 95%;
+	}
+
+	.post{
+		width: 95%;
+		padding: 0 auto;
+	}
+
+	.post img{
+		width: 100%;
+		margin: 0;
+	}
+}
